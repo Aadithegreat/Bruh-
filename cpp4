@@ -1,0 +1,49 @@
+#include <iostream>
+#include<string>
+#include <stdio.h>
+#include <string.h>
+using namespace std;
+
+int main() {
+    long int t;
+    char s[500000];
+    long int y;
+    long int size;
+    
+    
+    cin>>t;
+     for(int x=0;x<t;x++){
+        int b=0;
+        cin>>s;
+        int f,c,u,k;
+        
+       
+        int size=strlen(s);
+        for(y=0;y<=size-4;y++){
+        k=s[y+3];
+        f=s[y];
+        c=s[y+1];
+        u=s[y+2];
+        
+        long long int pro=k*f*u*c;   
+        if(pro==99*101*102*104){
+            
+            b++;
+        }}
+       if(b==0){
+           cout<<"normal"<<endl;
+           b=0;
+       }
+       else{
+           cout<<"lovely "<<b<<endl;
+           b=0;
+       }
+      
+        
+     }
+        
+     
+    //better one 
+    
+	return 0;
+}
