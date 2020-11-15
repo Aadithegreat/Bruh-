@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    float s,d,t,v,titu;
+    float ttime=0;
+   int test;
+   cin>>test;
+   for(int i=0;i<test;i++){
+    cin>>d;
+    if(d<300){
+    s=(d-50)/2;
+    s=s*2;
+    s=s/2.9;
+    t=s;
+    t=sqrt(t);
+    v=2.9*t;
+    t=2*t;
+    titu=50/v;
+    t=t+titu;
+    cout<<t<<endl;}
+    else if(d>=300){
+        s=d-247;
+        titu=s/26.8;
+        t=18.4+titu;
+        cout<<t<<endl;
+    }
+       ttime=ttime+t;
+       
+       t=0;
+   }
+   cout<<ttime<<endl;
+	return 0;
+}
